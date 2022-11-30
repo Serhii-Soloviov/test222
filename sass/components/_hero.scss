@@ -1,0 +1,206 @@
+/* HERO */
+.hero {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: #07081c;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    height: 568px;
+    // padding-left: 20px;
+    padding-top: 182px;
+    padding-bottom: 122px;
+    background-image: url("../images/mobile-blur@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/mobile-blur@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-top: 142px;
+    padding-bottom: 143px;
+    padding-left: 32px;
+    background-image: url("../images/tablet-blur@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/tablet-blur@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-top: 243px;
+    padding-bottom: 146px;
+    padding-left: 16px;
+    background-image: url("../images/desktop-blur@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/desktop-blur@2x.png");
+    }
+  }
+}
+.hero__container {
+  @media screen and (max-width: 768px) {
+    max-width: 480px;
+    position: absolute;
+    z-index: 1;
+    padding-left: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+  width: 100%;
+  margin: 0 auto;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.hero__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 240px;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 28px;
+    width: 370px;
+  }
+}
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 60px;
+    gap: 12px;
+  }
+}
+.hero__item::before {
+  content: "";
+  background: url("../images/dashicon.svg");
+  width: 18px;
+  height: 18px;
+}
+.hero__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: flex-start;
+  height: 15px;
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+.wraper-btn {
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  width: 200px;
+  border-radius: 5px;
+  padding: 1px;
+  width: 196px;
+  @media screen and (max-width: 768px) {
+    margin-left: calc((100% - 220px) / 2);
+    margin-right: auto;
+  }
+  display: flex;
+  justify-content: center;
+}
+
+.hero__btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  width: 196px;
+  border-radius: 5px;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  // @media screen and (max-width: 768px) {
+  //   margin-left: calc((100% - 220px) / 2);
+  //   margin-right: auto;
+  // }
+}
+.hero__btn:hover,
+.hero__btn:focus {
+  background: #06071b;
+}
+
+.hero__wraper--phone {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 94px;
+    right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 258px;
+    right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 222px;;
+    right: 55px;
+  }
+}
+.hero__wraper--decor {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    left: 199px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 227px;
+    left: 339px;
+  }
+}

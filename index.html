@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo link" href="index.html">Mobileapp</a>
+        <button
+          type="button"
+          class="mobile-menu__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu__icon"
+            aria-label="Перемикач мобільного меню"
+            width="24"
+            height="16"
+          >
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="mobile-menu__btn-close js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="mobile-menu__icon-close"
+              aria-label="Перемикач мобільного меню"
+              width="32"
+              height="32"
+            >
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="navigation header__navigation">
+            <a class="logo link" href="index.html">Mobileapp</a>
+            <ul class="navigation__list navigation__list--size list">
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#home">HOME</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#features">FEATURES</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#team">TEAM</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#testimonials"
+                  >TESTIMONIALS</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main-info">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 id="home" class="hero__title">Introducing Mobileapp</h1>
+          <h2 class="hero__subtitle">Maecenas vitae tellus sapien. Prasent</h2>
+          <ul class="hero__list list">
+            <li class="hero__item">semper scelerisque tristique a enim</li>
+            <li class="hero__item">
+              Integer ut mattis nulla, eget vehicula elit
+            </li>
+            <li class="hero__item">Prasent rutrum ac nunc et</li>
+          </ul>
+          <div class="wraper-btn">
+            <button class="hero__btn" type="button">Download</button>
+          </div>
+        </div>
+        <div class="hero__wraper--phone">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile-apple.png    1x,
+                ./images/mobile-apple@2x.png 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./images/tablet-apple.png    1x,
+                ./images/tablet-apple@2x.png 2x
+              "
+              media="(max-width:1279px)"
+            />
+            <source
+              srcset="
+                ./images/desktop-apple.png    1x,
+                ./images/desktop-apple@2x.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <img src="./images/mobile-apple.png" alt="Phone" />
+          </picture>
+        </div>
+        <div class="hero__wraper--decor">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop-decor.png    1x,
+                ./images/desktop-decor@2x.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet-decor.png    1x,
+                ./images/tablet-decor@2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <img src="./images/tablet-decor.png" alt="Decor" />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
